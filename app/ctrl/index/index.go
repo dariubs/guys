@@ -17,6 +17,12 @@ func NewIndex(db *gorm.DB) *Index {
 
 func (i *Index) Index() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		c.HTML(http.StatusOK, "index.html", gin.H{})
+		c.HTML(http.StatusOK, "home.html", gin.H{})
+	}
+}
+
+func (i *Index) Username() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.HTML(http.StatusOK, "username.html", gin.H{})
 	}
 }

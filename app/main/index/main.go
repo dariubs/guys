@@ -27,9 +27,10 @@ func main() {
 	router := gin.Default()
 	index := index.NewIndex(DB)
 
-	router.LoadHTMLGlob("view/main/**/*")
+	router.LoadHTMLGlob("view/index/**/*")
 
 	router.GET("/", index.Index())
+	router.GET("/:username", index.Username())
 
 	router.Run(":8080")
 }
