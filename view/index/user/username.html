@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Guys User Public Page</title>
+    <title>Profile Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Guys User Public Page</h1>
+<body class="bg-gray-900 text-white p-6 flex flex-col items-center">
+    <div class="max-w-3xl w-full">
+        <div class="flex items-center gap-4">
+            <img class="w-24 h-24 rounded-full" src="/profile.jpg" alt="Ilias Ism">
+            <div>
+                <h1 class="text-2xl font-bold">Name Family</h1>
+                <p class="text-gray-400"> Bay Area • $190k/month</p>
+                <p class="text-gray-300 mt-2">The best SEO expert in the world, startup founder and SEO entrepreneur.</p>
+                <div class="flex gap-3 mt-3">
+                    <a href="#" class="text-blue-400">Twitter</a>
+                    <a href="#" class="text-gray-400">GitHub</a>
+                    <a href="#" class="text-blue-600">LinkedIn</a>
+                    <a href="#" class="text-gray-300">Email</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-6 bg-gray-800 p-4 rounded-lg">
+            <h2 class="text-lg font-semibold mb-2">X SEO</h2>
+            <p class="text-gray-400">The best SEO agency for competitive startups</p>
+            <div class="w-full h-40 bg-gray-700 mt-4 flex items-center justify-center text-gray-300">Graph Placeholder</div>
+            <p class="text-right text-gray-300 mt-2">$6.5k/mo</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-md font-semibold">Ogx Graph</h3>
+                <p class="text-green-400">Active</p>
+                <p class="text-gray-400">Automatic beautiful social preview SEO images.</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-md font-semibold">Magic</h3>
+                <p class="text-gray-400">ChatGPT bot for Telegram</p>
+                <p class="text-right text-gray-300">$300/mo</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-md font-semibold">Gradient </h3>
+                <p class="text-gray-400">Gradient Wallpapers</p>
+                <p class="text-right text-gray-300">$100/mo</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
