@@ -25,7 +25,8 @@ func main() {
 	}
 
 	router := gin.Default()
-	index := index.NewIndex(DB)
+	gd := index.General{Name: "Guys"}
+	index := index.NewIndex(DB, gd)
 
 	router.LoadHTMLGlob("view/index/**/*")
 

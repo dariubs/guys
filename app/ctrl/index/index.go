@@ -9,10 +9,11 @@ import (
 
 type Index struct {
 	DB *gorm.DB
+	GD General
 }
 
-func NewIndex(db *gorm.DB) *Index {
-	return &Index{DB: db}
+func NewIndex(db *gorm.DB, gd General) *Index {
+	return &Index{DB: db, GD: gd}
 }
 
 func (i *Index) Index() gin.HandlerFunc {
